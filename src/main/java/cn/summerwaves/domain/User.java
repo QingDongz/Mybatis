@@ -4,22 +4,26 @@ package cn.summerwaves.domain;
  * Created by summerwaves on 2017/7/18.
  */
 public class User {
-    private String user_name;
+    private String userName;
     private String password;
     private int sex;
 
-    public User(String user_name, String password, int sex) {
-        this.user_name = user_name;
+    public User(String userName, String password, int sex) {
+        this.userName = userName;
         this.password = password;
         this.sex = sex;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public User() {
+
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -41,7 +45,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "user_name='" + user_name + '\'' +
+                "userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", sex=" + sex +
                 '}';
