@@ -18,6 +18,7 @@
     </environments>
 
     <mappers>
+        <mapper class="cn.summerwaves.dao.UserDao"/>
         <mapper resource="cn/summerwaves/mapper/UserDao.xml"/>
     </mappers>
 </configuration>
